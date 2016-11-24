@@ -1,0 +1,296 @@
+/* CSS Document  */
+/* Project name: JeovanyApp */
+/* File name: styles.css */
+/* Description: Hoja de estilos global */
+/* Creation date: Octubre de 2016 */
+/* Author: Juan Daniel Bonforti */
+/* Author's eMail: juan.bonforti@gmail.com */
+/********** FONTS (Google-fonts) **********/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("fonts/fontawesome-webfont.eot");
+  src: url("fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff") format("woff"), url("fonts/fontawesome-webfont.woff2") format("woff2"), url("fonts/fontawesome-webfont.ttf") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesome-webfont") format("svg"); }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Roboto Slab";
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.col-md-12, .col-md-8, .col-md-6, .col-md-4,
+.col.lg-12, .col.lg-8, .col.lg-6, .col.lg-4,
+.col.sm-12, .col.sm-8, .col.sm-6, .col.sm-4,
+.col.xs-12, .col.xs-8, .col.xs-6, .col.xs-4 {
+  padding: 0px; }
+
+/*************************************/
+/*=========     GENERAL    =========*/
+/***********************************/
+body {
+  font-family: "Roboto Slab";
+  text-align: center;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1200px;
+  margin: auto; }
+
+.btn-primary {
+  background-color: #f15a25;
+  border-color: #f15a25; }
+
+section {
+  padding: 80px 0; }
+
+/*************************************/
+/*=========     NAVBAR     =========*/
+/***********************************/
+.navbar-default {
+  background: transparent;
+  border: none;
+  margin-bottom: 0px; }
+  .navbar-default .active > a, .navbar-default a:hover {
+    box-shadow: 0 -3px #57518d inset !important;
+    color: #57518d !important;
+    background-color: #fff !important; }
+  .navbar-default .navbar-toggle {
+    border: none; }
+    .navbar-default .navbar-toggle:hover {
+      background: transparent; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background: #57518d; }
+  .navbar-default li:hover {
+    box-shadow: 0 -3px #57518d inset;
+    color: #57518d; }
+
+/*********** Lang selector ************/
+.lang .dropdown-toggle {
+  padding: 10px 15px 5px 0; }
+.lang .es-ES, .lang .en-EN, .lang .de-DE {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background: url(../assets/flags.png) no-repeat; }
+.lang .es-ES {
+  background-position: -448px -96px; }
+.lang .en-EN {
+  background-position: -352px -416px; }
+.lang .de-DE {
+  background-position: -96px -96px; }
+.lang .dropdown-menu {
+  min-width: 62px;
+  text-align: center;
+  background-color: #fff; }
+
+/*********** Log-in form ************/
+#login-dp {
+  min-width: 250px;
+  padding: 15px;
+  overflow: hidden;
+  background-color: #fff; }
+  #login-dp .help-block {
+    font-size: 12px; }
+  #login-dp .bottom {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    clear: both;
+    padding: 14px; }
+  #login-dp .social-buttons {
+    margin: 12px 0; }
+  #login-dp .social-buttons a {
+    width: 49%; }
+  #login-dp .form-group {
+    margin-bottom: 10px; }
+
+.btn-fb {
+  color: #fff;
+  background-color: #3b5998; }
+  .btn-fb:hover {
+    color: #fff;
+    background-color: #496ebc; }
+
+.btn-tw {
+  color: #fff;
+  background-color: #55acee; }
+  .btn-tw:hover {
+    color: #fff;
+    background-color: #59b5fa; }
+
+/*************************************/
+/*=========     HEADER     =========*/
+/***********************************/
+header .exchange {
+  text-align: left; }
+  header .exchange .desc {
+    color: #fff; }
+    header .exchange .desc .title {
+      font-size: 5em; }
+    header .exchange .desc .subtitle {
+      display: inline-block;
+      font-size: 2em;
+      width: 62%;
+      vertical-align: top;
+      padding-top: 20px; }
+  header .exchange .calculator {
+    color: #57518d; }
+    header .exchange .calculator .calculator-info {
+      text-align: center;
+      position: absolute;
+      top: 390px;
+      left: 60px;
+      width: 75%;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px; }
+      header .exchange .calculator .calculator-info .info {
+        display: none; }
+        header .exchange .calculator .calculator-info .info .info-title {
+          text-transform: uppercase;
+          font-size: 1.5em;
+          font-weight: bold;
+          margin-bottom: 15px; }
+      header .exchange .calculator .calculator-info .info-viewer {
+        padding: 15px;
+        color: #fff;
+        background: rgba(90, 85, 143, 0.9); }
+    header .exchange .calculator .calculator-container {
+      width: 80%;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px; }
+      header .exchange .calculator .calculator-container input, header .exchange .calculator .calculator-container select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        height: 45px;
+        border-radius: 0;
+        border: 1px solid #e3e3e3;
+        background-color: #fff; }
+      header .exchange .calculator .calculator-container li {
+        margin-bottom: 15px; }
+        header .exchange .calculator .calculator-container li .input-group {
+          margin-top: 15px; }
+          header .exchange .calculator .calculator-container li .input-group .iwant-input, header .exchange .calculator .calculator-container li .input-group .ihave-input {
+            width: 200px;
+            text-align: right; }
+          header .exchange .calculator .calculator-container li .input-group .custom-dropdown {
+            text-indent: 1px;
+            width: 120px;
+            position: absolute;
+            top: 0;
+            right: -119px;
+            padding-left: 20px;
+            background-image: url(../assets/dropdown-select-back.png); }
+          header .exchange .calculator .calculator-container li .input-group .custom-from-dropdown {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            display: block;
+            position: initial;
+            width: 320px;
+            background-image: url(../assets/dropdown-select-back.png);
+            background-repeat: no-repeat;
+            background-position-x: 200px;
+            padding-left: 10px; }
+      header .exchange .calculator .calculator-container .from-form {
+        padding-bottom: 25px;
+        border-bottom: 1px solid #d3d3d3; }
+      header .exchange .calculator .calculator-container .last {
+        margin-top: 15px;
+        padding: 10px 0; }
+        header .exchange .calculator .calculator-container .last button {
+          width: 320px;
+          padding: 12px; }
+          header .exchange .calculator .calculator-container .last button:hover {
+            background-color: #f15a25;
+            border-color: #f15a25; }
+
+.color-background {
+  background: #57518D;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#57518D, #AF9AAD);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#57518D, #AF9AAD);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#57518D, #AF9AAD);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#57518D, #AF9AAD);
+  /* Standard syntax */ }
+
+@media (max-width: 992px) {
+  .lang .dropdown-toggle {
+    padding: 0; } }
+@media (max-width: 768px) {
+  header .exchange .desc {
+    display: none; }
+
+  /********** lang selector **********/
+  .lang .dropdown-toggle {
+    padding: 8px; }
+
+  /********** login form ********/
+  #login-dp {
+    background-color: #fff; }
+
+  #login-dp .bottom {
+    background-color: inherit;
+    border-top: 0 none; } }
+@media (max-width: 415px) {
+  /********** Header **********/
+  .navbar-default {
+    margin-bottom: -50px; }
+
+  header {
+    text-align: left; }
+    header nav {
+      text-align: center;
+      position: relative;
+      top: -65px; }
+      header nav .navbar-collapse {
+        margin-top: 15px; } }
+
+/*# sourceMappingURL=style.css.map */

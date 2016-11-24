@@ -1,0 +1,93 @@
+/* CSS Document  */
+/* Project name: JeovanyApp */
+/* File name: styles.css */
+/* Description: Hoja de estilos global */
+/* Creation date: Octubre de 2016 */
+/* Author: Juan Daniel Bonforti */
+/* Author's eMail: juan.bonforti@gmail.com */
+
+/********** FONTS (Google-fonts) **********/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+//font-family: 'Roboto Slab'
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+//font-family: 'Kaushan Script'
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+//font-family: 'Montserrat'
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+//font-family: 'Droid Serif';
+@font-face {
+  font-family: 'FontAwesome';
+  src:  url('fonts/fontawesome-webfont.eot');
+  src:  url('fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+        url('fonts/fontawesome-webfont.woff') format('woff'),
+        url('fonts/fontawesome-webfont.woff2') format('woff2'),
+        url('fonts/fontawesome-webfont.ttf') format('truetype'),
+        url('fonts/fontawesome-webfont.svg#fontawesome-webfont') format('svg');
+}
+//font-family: 'Font Awesome';
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: $main-font;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.col-md-12, .col-md-8, .col-md-6, .col-md-4,
+.col.lg-12, .col.lg-8, .col.lg-6, .col.lg-4,
+.col.sm-12, .col.sm-8, .col.sm-6, .col.sm-4,
+.col.xs-12, .col.xs-8, .col.xs-6, .col.xs-4 {
+    padding: 0px;
+}
