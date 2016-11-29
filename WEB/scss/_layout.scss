@@ -1,235 +1,150 @@
 /*************************************/
 /*=========     GENERAL    =========*/
 /***********************************/
-body{
-  font-family: $main-font;
-  text-align: center;
-  box-sizing: border-box;
-}
-.container{
+.boxed {
   max-width: 1200px;
-  margin: auto;
-}
-.btn-primary{
-  background-color: $btn-color;
-  border-color: $btn-color;
+  margin: 0 auto;
+  font-family: $main-font;
 }
 section{
   padding: 80px 0;
-}
-
-/*************************************/
-/*=========     NAVBAR     =========*/
-/***********************************/
-.navbar-default{
-  background: transparent;
-  border: none;
-  margin-bottom: 0px;
-  .active > a, a:hover{
-    box-shadow: 0 -3px $main-color inset !important;
-    color: $main-color !important;
-    background-color: $box-color !important;
+  text-align: center;
+  .title{
+    font-family: $title-font;
+    font-size: 2em;
+    text-transform: uppercase;
   }
-  .navbar-toggle{
-    border: none;
-    &:hover{
-      background: transparent;
-    }
-    .icon-bar{
-      background: $main-color;
-    }
+  .subtitle{
+    font-size: 1.5em;
   }
-  li {
-    &:hover{
-      box-shadow: 0 -3px $main-color inset;
-      color: $main-color;
+  article{
+    .title{
+      font-size: 18px;
     }
   }
 }
 
-/*********** Lang selector ************/
-.lang {
-  .dropdown-toggle{
-    padding: 10px 15px 5px 0;
-  }
-  .es-ES, .en-EN, .de-DE{
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-    background: url(../assets/flags.png) no-repeat;
-  }
-  .es-ES{
-    background-position: -448px -96px;
-  }
-  .en-EN{
-    background-position: -352px -416px;
-  }
-  .de-DE{
-    background-position: -96px -96px;
-  }
-  .dropdown-menu{
-    min-width: 62px;
-    text-align: center;
-    background-color: $box-color;
-  }
+.back-color-1{
+  background-color: $main-back-color;
+  color: #fff !important;
 }
 
-/*********** Log-in form ************/
-#login-dp{
-  min-width: 250px;
-  padding: 15px;
-  overflow:hidden;
-  background-color: $box-color;
-  .help-block{
-    font-size:12px;   
-  }
-  .bottom{
-    background-color: $box-color;
-    border-top:1px solid #ddd;
-    clear:both;
-    padding:14px;
-  }
-  .social-buttons{
-    margin:12px 0;   
-  }
-  .social-buttons a{
-    width: 49%;
-  }
-  .form-group {
-    margin-bottom: 10px;
-  }
-}
-.btn-fb{
-  color: #fff;
-  background-color:#3b5998;
-  &:hover{
-    color: #fff;
-    background-color:#496ebc;
-  }
-}
-.btn-tw{
-  color: #fff;
-  background-color:#55acee;
-  &:hover{
-    color: #fff;
-    background-color:#59b5fa;
-  }
+.back-color-2{
+  background-color: $second-back-color;
+  color: #fff !important;
 }
 
+.back-color-img{
+  background-image: url("../assets/consultoria.jpg");
+  background-size: cover;
+}
+
+.btn-electromilenio {
+  display: inline-block;
+  margin: 20px;
+  padding: 5px;
+  width: 80px;
+  height: 35px;
+  border: 2px solid $main-color;
+  background-color: transparent;
+  a {
+    text-decoration: none;
+    color: $main-color;
+    &.hover{
+      color: $main-color;  
+    }
+  }
+}
 
 /*************************************/
 /*=========     HEADER     =========*/
 /***********************************/
 header{
-    .exchange{
-      text-align: left;
-      .desc {
-        color: #fff;
-        .title {
-          font-size: 5em;
-        }
-        .subtitle{
-          display: inline-block;
-          font-size: 2em;
-          width: 62%;
-          vertical-align: top;
-          padding-top: 20px;
-        }
+  position: relative;
+  .carousel-caption-mod {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    .title{
+    font-size: 3em;
+    }
+    .subtitle{
+      font-size: 2em;
+    }
+  }  
+  .navbar-default{
+    background-color: $second-color;
+    border-color: $second-color;
+    border-radius: 0;
+    margin: 0;
+    .navbar-header{
+      .navbar-brand > img {
+        max-width: 250px;
+        max-height: 80px; 
       }
-      .calculator{
-        color: $main-color;
-        .calculator-info{
-          text-align: center;
-          position: absolute;
-          top: 390px;
-          left: 60px;
-          width: 75%;
-          background: $box-color;
-          padding: 20px;
-          border-radius: 5px;
-          .info{
-            display: none;
-            .info-title{
-              text-transform: uppercase;
-              font-size: 1.5em;
-              font-weight: bold;
-              margin-bottom: 15px;
-            }           
-          }
-          .info-viewer{
-            padding: 15px;
-            color: #fff;
-            background: rgba(90,85,143, 0.9);
-          }
-        }
-        .calculator-container{
-          width: 80%;
-          margin:auto;
-          background: $box-color;
-          padding: 20px;
-          border-radius: 5px;
-          input, select {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            height: 45px;
-            border-radius: 0;
-            border: 1px solid #e3e3e3;
-            background-color: $box-color;
-          }
-          li{
-            margin-bottom: 15px;
-            .input-group{
-              margin-top: 15px;
-              .iwant-input, .ihave-input {
-                width: 200px;
-                text-align: right;
-              }
-              .custom-dropdown{
-                text-indent: 1px;
-                width: 120px;
-                position: absolute;
-                top: 0;
-                right: -119px;
-                padding-left: 20px;
-                background-image: url(../assets/dropdown-select-back.png);
-              }
-              .custom-from-dropdown{                
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                display: block;
-                position: initial;
-                width: 320px;
-                background-image: url(../assets/dropdown-select-back.png);
-                background-repeat: no-repeat;
-                background-position-x: 200px;
-                padding-left: 10px;
-              }
-            }
-          }
-          .from-form{
-            padding-bottom: 25px;
-            border-bottom: 1px solid #d3d3d3; 
-          }
-          .last{
-            margin-top: 15px;
-            padding: 10px 0;
-            button{
-              width: 320px;
-              padding: 12px;
-              &:hover{
-                background-color: #f15a25;
-                border-color: #f15a25;
-              }
-            }
-          }
+    }
+    .navbar-collapse{
+      padding: 30px;
+      .navbar-nav > li > a{
+        color: #fff;
+        &.hover{
+          color: #fff;
         }
       }
     }
   }
-.color-background{
-  background: #57518D; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#57518D, #AF9AAD); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#57518D, #AF9AAD); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#57518D, #AF9AAD); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#57518D, #AF9AAD); /* Standard syntax */
+}
+
+/***********************************/
+/*=========   NOSOTROS   =========*/
+/*********************************/
+#our{
+  .btn-electromilenio {
+    border-color: #fff;
+    a {
+      text-decoration: none;
+      color: #fff;
+      &.hover{
+        color: #fff;  
+      }
+    }
+  }
+}
+
+/****************************************/
+/*=========  ILUMINACION LED  =========*/
+/**************************************/
+
+
+/******************************************/
+/*=========     CONSULTORÍA     =========*/
+/****************************************/
+
+
+/**************************************/
+/*=========     ENERGÍA     =========*/
+/************************************/
+
+
+/***************************************/
+/*=========     CONTACTO     =========*/
+/*************************************/
+#contact {
+  padding-bottom: 0;
+  p {
+    display: inline-block;
+  }
+  .icon {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    &.facebook{
+      background-color: #3b5998;
+    }
+    &.linkedin{
+      background-color: #007bb5;
+    }
+  }
 }

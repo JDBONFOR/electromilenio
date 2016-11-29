@@ -1,33 +1,40 @@
 /* CSS Document  */
-/* Project name: JeovanyApp */
+/* Project name: Electromilenio */
 /* File name: styles.css */
 /* Description: Hoja de estilos global */
-/* Creation date: Octubre de 2016 */
+/* Creation date: Diciembre de 2016 */
 /* Author: Juan Daniel Bonforti */
 /* Author's eMail: juan.bonforti@gmail.com */
-
-/********** FONTS (Google-fonts) **********/
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
-//font-family: 'Roboto Slab'
-@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
-//font-family: 'Kaushan Script'
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-//font-family: 'Montserrat'
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
-//font-family: 'Droid Serif';
 @font-face {
-  font-family: 'FontAwesome';
-  src:  url('fonts/fontawesome-webfont.eot');
-  src:  url('fonts/fontawesome-webfont.eot') format('embedded-opentype'),
-        url('fonts/fontawesome-webfont.woff') format('woff'),
-        url('fonts/fontawesome-webfont.woff2') format('woff2'),
-        url('fonts/fontawesome-webfont.ttf') format('truetype'),
-        url('fonts/fontawesome-webfont.svg#fontawesome-webfont') format('svg');
+  font-family: 'electromilenio-title';
+  src:  url('../fonts/title/EurostileExtended.eot');
+  src:  url('../fonts/title/EurostileExtended.eot') format('embedded-opentype'),
+        url('../fonts/title/EurostileExtended.woff') format('woff'),
+        url('../fonts/title/EurostileExtended.woff2') format('woff2'),
+        url('../fonts/title/EurostileExtended.ttf') format('truetype'),
+        url('../fonts/title/EurostileExtended.svg#EurostileExtended') format('svg');
 }
-//font-family: 'Font Awesome';
-
-
-
+//font-family: 'Eurostile';
+@font-face {
+  font-family: 'electromilenio-text';
+  src:  url('../fonts/text/HelveticaNeue-Thin.eot');
+  src:  url('../fonts/text/HelveticaNeue-Thin.eot') format('embedded-opentype'),
+        url('../fonts/text/HelveticaNeue-Thin.woff') format('woff'),
+        url('../fonts/text/HelveticaNeue-Thin.woff2') format('woff2'),
+        url('../fonts/text/HelveticaNeue-Thin.ttf') format('truetype'),
+        url('../fonts/text/HelveticaNeue-Thin.svg#HelveticaNeue-Thin') format('svg');
+}
+//font-family: 'HelveticaNeue-Light';
+@font-face {
+  font-family: 'electromilenio-text-italic';
+  src:  url('../fonts/text_italic/HelveticaNeue-LightCondObl.eot');
+  src:  url('../fonts/text_italic/HelveticaNeue-LightCondObl.eot') format('embedded-opentype'),
+        url('../fonts/text_italic/HelveticaNeue-LightCondObl.woff') format('woff'),
+        url('../fonts/text_italic/HelveticaNeue-LightCondObl.woff2') format('woff2'),
+        url('../fonts/text_italic/HelveticaNeue-LightCondObl.ttf') format('truetype'),
+        url('../fonts/text_italic/HelveticaNeue-LightCondObl.svg#HelveticaNeue-LightCondObl') format('svg');
+}
+//font-family: 'HelveticaNeue-LightCondObl';
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
