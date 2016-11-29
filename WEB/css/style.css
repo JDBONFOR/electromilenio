@@ -80,21 +80,23 @@ table {
   margin: 0 auto;
   font-family: "electromilenio-text"; }
 
+.title {
+  font-family: "electromilenio-title";
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+
+.subtitle {
+  font-size: 1.5em;
+  margin-bottom: 30px; }
+
 section {
   padding: 80px 0;
   text-align: center; }
-  section .title {
-    font-family: "electromilenio-title";
-    font-size: 2em;
-    text-transform: uppercase;
-    margin-bottom: 30px; }
-  section .subtitle {
-    font-size: 1.5em;
-    margin-bottom: 30px; }
   section article .title {
     font-size: 18px; }
   section p {
-    line-height: 2em; }
+    line-height: 1.3em; }
 
 .back-color-1 {
   background-color: #434142;
@@ -122,24 +124,51 @@ section {
     #our .btn-electromilenio a.hover, #led article .article-led-desc .btn-electromilenio a.hover, #contact .btn-electromilenio a.hover {
       color: #6798c5; }
 
+.back-top {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 80px;
+  bottom: 25px;
+  background: #6798c5;
+  font-size: 2.2em;
+  padding: 5px 0px 0px 8px;
+  border-radius: 10px;
+  transition: .8s;
+  -o-transition: .8s;
+  -ms-transition: .8s;
+  -moz-transition: .8s;
+  -webkit-transition: .8s; }
+  .back-top a {
+    color: #fff; }
+    .back-top a.hover, .back-top a.visited, .back-top a.focus {
+      color: #fff; }
+
 /*************************************/
 /*=========     HEADER     =========*/
 /***********************************/
 header {
   position: relative; }
-  header .carousel-caption-mod {
+  header #myCarousel img {
+    width: 100%; }
+  header #myCarousel .carousel-caption-mod {
     position: absolute;
     top: 20%;
     left: 10%; }
-    header .carousel-caption-mod .title {
+    header #myCarousel .carousel-caption-mod .title {
       font-size: 3em; }
-    header .carousel-caption-mod .subtitle {
+    header #myCarousel .carousel-caption-mod .subtitle {
       font-size: 2em; }
   header .navbar-default {
     background-color: #434142;
     border-color: #434142;
     border-radius: 0;
-    margin: 0; }
+    margin: 0;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s; }
     header .navbar-default .navbar-header .navbar-brand > img {
       max-width: 250px;
       max-height: 80px; }
@@ -155,6 +184,12 @@ header {
         color: #fff; }
         header .navbar-default .navbar-collapse .navbar-nav > li > a.hover {
           color: #fff; }
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 93.7%; }
 
 /***********************************/
 /*=========   NOSOTROS   =========*/
@@ -238,7 +273,18 @@ header {
 footer {
   padding: 15px 0; }
 
+/*************************************/
+/*=========     BANNER     =========*/
+/***********************************/
+.banner img {
+  width: 100%; }
+
 /* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 1152px) {
+  #myCarousel {
+    min-height: 550px; }
+    #myCarousel img {
+      height: 550px; } }
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 1152px) {
   .col-md-12, .col-md-8, .col-md-6, .col-md-4,
@@ -260,6 +306,11 @@ footer {
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
+  #myCarousel {
+    min-height: 350px; }
+    #myCarousel img {
+      height: 350px; }
+
   #led article .article-led-desc {
     width: 50%; } }
 
