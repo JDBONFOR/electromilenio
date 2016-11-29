@@ -24,7 +24,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -47,7 +47,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1; }
 
-ol, ul {
+ol {
   list-style: none; }
 
 blockquote, q {
@@ -86,11 +86,15 @@ section {
   section .title {
     font-family: "electromilenio-title";
     font-size: 2em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 30px; }
   section .subtitle {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    margin-bottom: 30px; }
   section article .title {
     font-size: 18px; }
+  section p {
+    line-height: 2em; }
 
 .back-color-1 {
   background-color: #434142;
@@ -104,18 +108,18 @@ section {
   background-image: url("../assets/consultoria.jpg");
   background-size: cover; }
 
-.btn-electromilenio {
+#our .btn-electromilenio, #led article .article-led-desc .btn-electromilenio, #contact .btn-electromilenio {
   display: inline-block;
-  margin: 20px;
-  padding: 5px;
+  margin: 20px 0;
+  padding: 7px 10px;
   width: 80px;
   height: 35px;
   border: 2px solid #6798c5;
   background-color: transparent; }
-  .btn-electromilenio a {
+  #our .btn-electromilenio a, #led article .article-led-desc .btn-electromilenio a, #contact .btn-electromilenio a {
     text-decoration: none;
     color: #6798c5; }
-    .btn-electromilenio a.hover {
+    #our .btn-electromilenio a.hover, #led article .article-led-desc .btn-electromilenio a.hover, #contact .btn-electromilenio a.hover {
       color: #6798c5; }
 
 /*************************************/
@@ -139,6 +143,12 @@ header {
     header .navbar-default .navbar-header .navbar-brand > img {
       max-width: 250px;
       max-height: 80px; }
+    header .navbar-default .navbar-toggle {
+      border-color: #6798c5;
+      top: 35px;
+      color: #fff; }
+      header .navbar-default .navbar-toggle.hover {
+        background-color: #6798c5; }
     header .navbar-default .navbar-collapse {
       padding: 30px; }
       header .navbar-default .navbar-collapse .navbar-nav > li > a {
@@ -160,9 +170,26 @@ header {
 /****************************************/
 /*=========  ILUMINACION LED  =========*/
 /**************************************/
+#led article {
+  margin: 20px 0; }
+  #led article i {
+    float: left; }
+  #led article .article-led-desc {
+    width: 60%;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top; }
+    #led article .article-led-desc p {
+      line-height: 1.5em; }
+
 /******************************************/
 /*=========     CONSULTORÍA     =========*/
 /****************************************/
+#consultancy ul {
+  display: inline-block; }
+  #consultancy ul li {
+    margin-bottom: 10px; }
+
 /**************************************/
 /*=========     ENERGÍA     =========*/
 /************************************/
@@ -170,12 +197,15 @@ header {
 /*=========     CONTACTO     =========*/
 /*************************************/
 #contact {
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  text-align: left; }
   #contact p {
-    display: inline-block; }
+    display: inline-block;
+    line-height: 4.5em; }
   #contact .icon {
     display: inline-block;
     box-sizing: border-box;
+    text-align: center;
     padding: 10px;
     width: 40px;
     height: 40px; }
@@ -183,11 +213,54 @@ header {
       background-color: #3b5998; }
     #contact .icon.linkedin {
       background-color: #007bb5; }
+  #contact img {
+    max-width: 100%;
+    margin-top: 30px; }
+  #contact .data-message {
+    box-sizing: border-box;
+    width: 48%;
+    margin-left: 15px; }
+  #contact .data-social {
+    margin-top: 10px; }
+  #contact .form-group label {
+    margin-bottom: 5px; }
+  #contact .btn-electromilenio {
+    border-color: #fff;
+    padding: 4px 10px; }
+    #contact .btn-electromilenio button {
+      border: none;
+      background: transparent;
+      color: #fff; }
+
+/*************************************/
+/*=========     FOOTER     =========*/
+/***********************************/
+footer {
+  padding: 15px 0; }
 
 /* Smaller than standard 960 (devices and browsers) */
 /* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 1152px) {
+  .col-md-12, .col-md-8, .col-md-6, .col-md-4,
+  .col.lg-12, .col.lg-8, .col.lg-6, .col.lg-4,
+  .col.sm-12, .col.sm-8, .col.sm-6, .col.sm-4,
+  .col.xs-12, .col.xs-8, .col.xs-6, .col.xs-4 {
+    width: 100% !important; }
+
+  #contact .data-message {
+    margin: 0; } }
 /* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  header .navbar-header {
+    min-height: 110px; }
+
+  #contact .data-message {
+    width: 100%;
+    margin: 0; } }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  #led article .article-led-desc {
+    width: 50%; } }
 
 /*# sourceMappingURL=style.css.map */
