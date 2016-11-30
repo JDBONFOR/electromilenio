@@ -14,13 +14,13 @@ $(document).ready(function(){
     if (documentEl.scrollTop() > headerSectionOffset){
       if ($(window).width() > 768) {
         $('nav').addClass('fixed-top');
-        $('.back-top').removeClass('hidden');
+        $('.back-top').removeClass('hidder');
       } else {
-        $('.back-top').removeClass('hidden');
+        $('.back-top').removeClass('hidder');
       }
     } else {
       $('nav').removeClass('fixed-top');
-      $('.back-top').addClass('hidden');
+      $('.back-top').addClass('hidder');
     }
   });
   // SmoothScrolling

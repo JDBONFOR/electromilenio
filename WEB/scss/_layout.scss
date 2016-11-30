@@ -61,6 +61,15 @@ section{
   }
 }
 .back-top{
+  &.hidder{
+    opacity: 0;
+    transition: all .8s;
+    -o-transition: all .8s;
+    -ms-transition: all .8s;
+    -moz-transition: all .8s;
+    -webkit-transition: all .8s;
+  }
+  opacity: 1;
   height: 50px;
   width: 50px;
   position: fixed;
@@ -76,19 +85,19 @@ section{
       color: #fff;
     }
   }
-  transition: .8s;
-  -o-transition: .8s;
-  -ms-transition: .8s;
-  -moz-transition: .8s;
-  -webkit-transition: .8s;
+  transition: all .8s;
+  -o-transition: all .8s;
+  -ms-transition: all .8s;
+  -moz-transition: all .8s;
+  -webkit-transition: all .8s;
 }
 
 /*************************************/
 /*=========     HEADER     =========*/
 /***********************************/
 header{
-  position: relative;
   #myCarousel{
+    margin-top: 70px;
     img{
       width:100%;
     }
@@ -105,14 +114,23 @@ header{
     }
   }      
   .navbar-default{
+    position: fixed;
+    top: 0;
+    z-index: 100;
     background-color: $second-color;
     border-color: $second-color;
     border-radius: 0;
     margin: 0;
+    width: 1200px;  
     .navbar-header{
       .navbar-brand > img {
         max-width: 250px;
-        max-height: 80px; 
+        max-height: 80px;
+        transition: all .8s;
+        -o-transition: all .8s;
+        -ms-transition: all .8s;
+        -moz-transition: all .8s;
+        -webkit-transition: all .8s; 
       }
     }
     .navbar-toggle {
@@ -125,25 +143,34 @@ header{
     }
     .navbar-collapse{
       padding: 30px;
+      transition: all .8s;
+      -o-transition: all .8s;
+      -ms-transition: all .8s;
+      -moz-transition: all .8s;
+      -webkit-transition: all .8s;
       .navbar-nav > li > a{
         color: #fff;
+        text-transform: uppercase;
         &.hover{
           color: #fff;
         }
       }
-    }   
-    -webkit-transition: .8s;
-    -moz-transition: .8s;
-    -ms-transition: .8s;
-    -o-transition: .8s;
-    transition: .8s;
+    }  
   }
 }
 .fixed-top{
   position: fixed;
   top: 0;
   z-index: 100;
-  width: 93.7%;
+  width:inherit;
+  .navbar-header{
+    .navbar-brand > img {
+      max-width: 180px !important;
+    }
+  }
+  .navbar-collapse{
+    padding: 20px !important;
+  }
 }
 /***********************************/
 /*=========   NOSOTROS   =========*/
