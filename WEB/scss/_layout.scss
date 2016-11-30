@@ -97,7 +97,7 @@ section{
 /***********************************/
 header{
   #myCarousel{
-    margin-top: 70px;
+    margin-top: 85px;
     img{
       width:100%;
     }
@@ -106,10 +106,15 @@ header{
       top: 20%;
       left: 10%;
       .title{
-      font-size: 3em;
+        font-size: 3em;
+        text-shadow: 2px 2px 8px #e3e3e3;
       }
       .subtitle{
         font-size: 2em;
+        font-style: italic;
+      }
+      &.white-text{
+        color: #fff;
       }
     }
   }      
@@ -219,6 +224,7 @@ header{
 #consultancy{
   ul {
     display: inline-block;
+    width: 620px;
     li {
       margin-bottom: 10px;
     }
@@ -295,7 +301,11 @@ footer{
 /*=========     BANNER     =========*/
 /***********************************/
 .banner{
+  padding-top: 70px;
   img{
     width: 100%;
   }
+}
+video{
+    margin-bottom: -3px;
 }
