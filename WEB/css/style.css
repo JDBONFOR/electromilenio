@@ -323,7 +323,10 @@ video {
       height: 550px; }
 
   #consultancy ul {
-    width: 100%; } }
+    width: 100%; }
+
+  .banner {
+    padding-top: 0; } }
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 1152px) {
   .col-md-12, .col-md-8, .col-md-6, .col-md-4,
