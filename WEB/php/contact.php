@@ -15,11 +15,12 @@ if (isset($_POST['firstName']) && isset($_POST['email']) && isset($_POST['phone'
 
   $mail->From = $_POST['email'];
   $mail->FromName = $_POST['firstName'];
-  $mail->AddAddress('juan.bonforti@gmail.com');
+  $mail->AddAddress('info@electromilenio.com.ar');
   $mail->Subject = 'Electromilenio - Consulta desde la WEB';
   $mail->IsHTML(true);
   $mail->Body = '<html>
                  '.$_POST['message'].'
+                  El telefono de contacto es'.$_POST['phone'].'
                  </html>';
 
   if (isset($_POST['ref'])) {
